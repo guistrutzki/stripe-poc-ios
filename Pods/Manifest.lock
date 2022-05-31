@@ -1,0 +1,39 @@
+PODS:
+  - SnapKit (5.0.1)
+  - Stripe (22.4.0):
+    - Stripe/Stripe3DS2 (= 22.4.0)
+    - StripeApplePay (= 22.4.0)
+    - StripeCore (= 22.4.0)
+    - StripeUICore (= 22.4.0)
+  - Stripe/Stripe3DS2 (22.4.0):
+    - StripeApplePay (= 22.4.0)
+    - StripeCore (= 22.4.0)
+    - StripeUICore (= 22.4.0)
+  - StripeApplePay (22.4.0):
+    - StripeCore (= 22.4.0)
+  - StripeCore (22.4.0)
+  - StripeUICore (22.4.0):
+    - StripeCore (= 22.4.0)
+
+DEPENDENCIES:
+  - SnapKit
+  - Stripe
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripeUICore
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Stripe: a925dfa9a7e51aa8f782f428abc10cb828b45a85
+  StripeApplePay: 369857bafe8baf02e31b47478db1574febd2a2f3
+  StripeCore: a94d2823817c97c79fce60884ab9027a2da798c1
+  StripeUICore: a8e24a6c91a5c99075c7a490d45695fb912876e8
+
+PODFILE CHECKSUM: 9bc900a2ccbd3f3bf921f614f3ca5bf45450cb2d
+
+COCOAPODS: 1.11.3

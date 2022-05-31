@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5868EAA5C64AB073C888432E /* Pods_stripe_app_integration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0132C0EE3BC08191661E1516 /* Pods_stripe_app_integration.framework */; };
 		5BE2FD8728453651009B108B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FD8628453651009B108B /* AppDelegate.swift */; };
 		5BE2FD8928453651009B108B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FD8828453651009B108B /* SceneDelegate.swift */; };
-		5BE2FD8B28453651009B108B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FD8A28453651009B108B /* ViewController.swift */; };
-		5BE2FD8E28453651009B108B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE2FD8C28453651009B108B /* Main.storyboard */; };
 		5BE2FD9028453654009B108B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE2FD8F28453654009B108B /* Assets.xcassets */; };
 		5BE2FD9328453654009B108B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE2FD9128453654009B108B /* LaunchScreen.storyboard */; };
+		5BE2FD9D284537A4009B108B /* AppointmentsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FD9C284537A4009B108B /* AppointmentsListVC.swift */; };
+		5BE2FDA228453BC4009B108B /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDA128453BC4009B108B /* ViewCode.swift */; };
+		5BE2FDA428453C07009B108B /* AppointmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDA328453C07009B108B /* AppointmentListView.swift */; };
+		5BE2FDA7284642A5009B108B /* AppointmentCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDA6284642A5009B108B /* AppointmentCardViewCell.swift */; };
+		5BE2FDAA284643B4009B108B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDA9284643B4009B108B /* UIView+Ext.swift */; };
+		5BE2FDAC284644CC009B108B /* UITableViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDAB284644CC009B108B /* UITableViewCell+Ext.swift */; };
+		5BE2FDAE2846456A009B108B /* AppointmentsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDAD2846456A009B108B /* AppointmentsListVM.swift */; };
+		5BE2FDB02846500D009B108B /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDAF2846500D009B108B /* UIFont+Ext.swift */; };
+		5BE2FDB228468790009B108B /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDB12846878F009B108B /* Double+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0132C0EE3BC08191661E1516 /* Pods_stripe_app_integration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stripe_app_integration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3410400F639C5307FF14164C /* Pods-stripe-app-integration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripe-app-integration.release.xcconfig"; path = "Target Support Files/Pods-stripe-app-integration/Pods-stripe-app-integration.release.xcconfig"; sourceTree = "<group>"; };
 		5BE2FD8328453651009B108B /* stripe-app-integration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stripe-app-integration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE2FD8628453651009B108B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE2FD8828453651009B108B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5BE2FD8A28453651009B108B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5BE2FD8D28453651009B108B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BE2FD8F28453654009B108B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE2FD9228453654009B108B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE2FD9428453654009B108B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE2FD9C284537A4009B108B /* AppointmentsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsListVC.swift; sourceTree = "<group>"; };
+		5BE2FDA128453BC4009B108B /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		5BE2FDA328453C07009B108B /* AppointmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentListView.swift; sourceTree = "<group>"; };
+		5BE2FDA6284642A5009B108B /* AppointmentCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCardViewCell.swift; sourceTree = "<group>"; };
+		5BE2FDA9284643B4009B108B /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		5BE2FDAB284644CC009B108B /* UITableViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ext.swift"; sourceTree = "<group>"; };
+		5BE2FDAD2846456A009B108B /* AppointmentsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsListVM.swift; sourceTree = "<group>"; };
+		5BE2FDAF2846500D009B108B /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		5BE2FDB12846878F009B108B /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		A9727AEC905B69E3B6E16552 /* Pods-stripe-app-integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripe-app-integration.debug.xcconfig"; path = "Target Support Files/Pods-stripe-app-integration/Pods-stripe-app-integration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5868EAA5C64AB073C888432E /* Pods_stripe_app_integration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42786CB64186DE8140BCE082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9727AEC905B69E3B6E16552 /* Pods-stripe-app-integration.debug.xcconfig */,
+				3410400F639C5307FF14164C /* Pods-stripe-app-integration.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5BE2FD7A28453650009B108B = {
 			isa = PBXGroup;
 			children = (
 				5BE2FD8528453651009B108B /* stripe-app-integration */,
 				5BE2FD8428453651009B108B /* Products */,
+				42786CB64186DE8140BCE082 /* Pods */,
+				BC948450EC1C8E1A1834DCBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +86,86 @@
 		5BE2FD8528453651009B108B /* stripe-app-integration */ = {
 			isa = PBXGroup;
 			children = (
-				5BE2FD8628453651009B108B /* AppDelegate.swift */,
-				5BE2FD8828453651009B108B /* SceneDelegate.swift */,
-				5BE2FD8A28453651009B108B /* ViewController.swift */,
-				5BE2FD8C28453651009B108B /* Main.storyboard */,
-				5BE2FD8F28453654009B108B /* Assets.xcassets */,
-				5BE2FD9128453654009B108B /* LaunchScreen.storyboard */,
+				5BE2FDA828464360009B108B /* Extensions */,
 				5BE2FD9428453654009B108B /* Info.plist */,
+				5BE2FDA528453D0D009B108B /* Components */,
+				5BE2FD9E28453B15009B108B /* AppDelegate */,
+				5BE2FD9A28453739009B108B /* Screens */,
+				5BE2FDA028453BB0009B108B /* Utils */,
+				5BE2FD9F28453B3E009B108B /* Resources */,
 			);
 			path = "stripe-app-integration";
+			sourceTree = "<group>";
+		};
+		5BE2FD9A28453739009B108B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2FD9B28453756009B108B /* AppointmentsList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5BE2FD9B28453756009B108B /* AppointmentsList */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2FD9C284537A4009B108B /* AppointmentsListVC.swift */,
+				5BE2FDA328453C07009B108B /* AppointmentListView.swift */,
+				5BE2FDAD2846456A009B108B /* AppointmentsListVM.swift */,
+			);
+			path = AppointmentsList;
+			sourceTree = "<group>";
+		};
+		5BE2FD9E28453B15009B108B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2FD8628453651009B108B /* AppDelegate.swift */,
+				5BE2FD8828453651009B108B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5BE2FD9F28453B3E009B108B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2FD9128453654009B108B /* LaunchScreen.storyboard */,
+				5BE2FD8F28453654009B108B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5BE2FDA028453BB0009B108B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2FDA128453BC4009B108B /* ViewCode.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5BE2FDA528453D0D009B108B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2FDA6284642A5009B108B /* AppointmentCardViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5BE2FDA828464360009B108B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2FDA9284643B4009B108B /* UIView+Ext.swift */,
+				5BE2FDAB284644CC009B108B /* UITableViewCell+Ext.swift */,
+				5BE2FDAF2846500D009B108B /* UIFont+Ext.swift */,
+				5BE2FDB12846878F009B108B /* Double+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC948450EC1C8E1A1834DCBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0132C0EE3BC08191661E1516 /* Pods_stripe_app_integration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE2FD9728453654009B108B /* Build configuration list for PBXNativeTarget "stripe-app-integration" */;
 			buildPhases = (
+				4E33ED1CE96D76E306EADCDE /* [CP] Check Pods Manifest.lock */,
 				5BE2FD7F28453651009B108B /* Sources */,
 				5BE2FD8028453651009B108B /* Frameworks */,
 				5BE2FD8128453651009B108B /* Resources */,
+				F6F8AB1DD2ACE47CBAFD67A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +230,75 @@
 			files = (
 				5BE2FD9328453654009B108B /* LaunchScreen.storyboard in Resources */,
 				5BE2FD9028453654009B108B /* Assets.xcassets in Resources */,
-				5BE2FD8E28453651009B108B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E33ED1CE96D76E306EADCDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stripe-app-integration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F8AB1DD2ACE47CBAFD67A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stripe-app-integration/Pods-stripe-app-integration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stripe-app-integration/Pods-stripe-app-integration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stripe-app-integration/Pods-stripe-app-integration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BE2FD7F28453651009B108B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BE2FD8B28453651009B108B /* ViewController.swift in Sources */,
 				5BE2FD8728453651009B108B /* AppDelegate.swift in Sources */,
+				5BE2FDAC284644CC009B108B /* UITableViewCell+Ext.swift in Sources */,
+				5BE2FDA428453C07009B108B /* AppointmentListView.swift in Sources */,
 				5BE2FD8928453651009B108B /* SceneDelegate.swift in Sources */,
+				5BE2FDB228468790009B108B /* Double+Ext.swift in Sources */,
+				5BE2FDB02846500D009B108B /* UIFont+Ext.swift in Sources */,
+				5BE2FDA7284642A5009B108B /* AppointmentCardViewCell.swift in Sources */,
+				5BE2FDAE2846456A009B108B /* AppointmentsListVM.swift in Sources */,
+				5BE2FDAA284643B4009B108B /* UIView+Ext.swift in Sources */,
+				5BE2FD9D284537A4009B108B /* AppointmentsListVC.swift in Sources */,
+				5BE2FDA228453BC4009B108B /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5BE2FD8C28453651009B108B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BE2FD8D28453651009B108B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5BE2FD9128453654009B108B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +428,7 @@
 		};
 		5BE2FD9828453654009B108B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9727AEC905B69E3B6E16552 /* Pods-stripe-app-integration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +439,6 @@
 				INFOPLIST_FILE = "stripe-app-integration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +456,7 @@
 		};
 		5BE2FD9928453654009B108B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3410400F639C5307FF14164C /* Pods-stripe-app-integration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +467,6 @@
 				INFOPLIST_FILE = "stripe-app-integration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

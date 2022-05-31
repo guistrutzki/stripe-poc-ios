@@ -1,0 +1,6 @@
+framework module Pods_stripe_app_integration {
+  umbrella header "Pods-stripe-app-integration-umbrella.h"
+
+  export *
+  module * { export * }
+}
