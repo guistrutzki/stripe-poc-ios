@@ -67,7 +67,7 @@ extension AppointmentCardViewCell {
     public func setup(_ data: Appointment) {
         doctorNameLabel.text = data.doctor
         appointmentDateLabel.text = data.date
-        priceLabel.text = data.value.currencyStringLocalizedWithSymbol(currency: data.currency)
+        priceLabel.text = data.value.currencyStringLocalizedWithSymbol(locale: data.locale)
     }
 }
 

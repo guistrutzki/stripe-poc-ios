@@ -21,6 +21,12 @@
 		5BE2FDAE2846456A009B108B /* AppointmentsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDAD2846456A009B108B /* AppointmentsListVM.swift */; };
 		5BE2FDB02846500D009B108B /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDAF2846500D009B108B /* UIFont+Ext.swift */; };
 		5BE2FDB228468790009B108B /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDB12846878F009B108B /* Double+Ext.swift */; };
+		5BE2FDB52846E873009B108B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDB42846E873009B108B /* HTTPMethod.swift */; };
+		5BE2FDB72846E888009B108B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDB62846E888009B108B /* NetworkError.swift */; };
+		5BE2FDB92846E89C009B108B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDB82846E89C009B108B /* NetworkClient.swift */; };
+		5BE2FDBB2846E8CB009B108B /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDBA2846E8CB009B108B /* PaymentService.swift */; };
+		5BE2FDBE2846EA03009B108B /* PaymentIntentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDBD2846EA03009B108B /* PaymentIntentResponse.swift */; };
+		5BE2FDC02846F75D009B108B /* Encodable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2FDBF2846F75D009B108B /* Encodable+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +47,12 @@
 		5BE2FDAD2846456A009B108B /* AppointmentsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsListVM.swift; sourceTree = "<group>"; };
 		5BE2FDAF2846500D009B108B /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 		5BE2FDB12846878F009B108B /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		5BE2FDB42846E873009B108B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		5BE2FDB62846E888009B108B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		5BE2FDB82846E89C009B108B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		5BE2FDBA2846E8CB009B108B /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
+		5BE2FDBD2846EA03009B108B /* PaymentIntentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentIntentResponse.swift; sourceTree = "<group>"; };
+		5BE2FDBF2846F75D009B108B /* Encodable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Ext.swift"; sourceTree = "<group>"; };
 		A9727AEC905B69E3B6E16552 /* Pods-stripe-app-integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripe-app-integration.debug.xcconfig"; path = "Target Support Files/Pods-stripe-app-integration/Pods-stripe-app-integration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,11 +98,13 @@
 		5BE2FD8528453651009B108B /* stripe-app-integration */ = {
 			isa = PBXGroup;
 			children = (
+				5BE2FD9A28453739009B108B /* Screens */,
+				5BE2FDBC2846E9D6009B108B /* Models */,
+				5BE2FDB32846E85A009B108B /* Service */,
 				5BE2FDA828464360009B108B /* Extensions */,
 				5BE2FD9428453654009B108B /* Info.plist */,
 				5BE2FDA528453D0D009B108B /* Components */,
 				5BE2FD9E28453B15009B108B /* AppDelegate */,
-				5BE2FD9A28453739009B108B /* Screens */,
 				5BE2FDA028453BB0009B108B /* Utils */,
 				5BE2FD9F28453B3E009B108B /* Resources */,
 			);
@@ -156,8 +170,28 @@
 				5BE2FDAB284644CC009B108B /* UITableViewCell+Ext.swift */,
 				5BE2FDAF2846500D009B108B /* UIFont+Ext.swift */,
 				5BE2FDB12846878F009B108B /* Double+Ext.swift */,
+				5BE2FDBF2846F75D009B108B /* Encodable+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5BE2FDB32846E85A009B108B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2FDB42846E873009B108B /* HTTPMethod.swift */,
+				5BE2FDB62846E888009B108B /* NetworkError.swift */,
+				5BE2FDB82846E89C009B108B /* NetworkClient.swift */,
+				5BE2FDBA2846E8CB009B108B /* PaymentService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5BE2FDBC2846E9D6009B108B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2FDBD2846EA03009B108B /* PaymentIntentResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BC948450EC1C8E1A1834DCBE /* Frameworks */ = {
@@ -286,11 +320,17 @@
 				5BE2FDAC284644CC009B108B /* UITableViewCell+Ext.swift in Sources */,
 				5BE2FDA428453C07009B108B /* AppointmentListView.swift in Sources */,
 				5BE2FD8928453651009B108B /* SceneDelegate.swift in Sources */,
+				5BE2FDBB2846E8CB009B108B /* PaymentService.swift in Sources */,
 				5BE2FDB228468790009B108B /* Double+Ext.swift in Sources */,
 				5BE2FDB02846500D009B108B /* UIFont+Ext.swift in Sources */,
 				5BE2FDA7284642A5009B108B /* AppointmentCardViewCell.swift in Sources */,
 				5BE2FDAE2846456A009B108B /* AppointmentsListVM.swift in Sources */,
+				5BE2FDB52846E873009B108B /* HTTPMethod.swift in Sources */,
 				5BE2FDAA284643B4009B108B /* UIView+Ext.swift in Sources */,
+				5BE2FDB72846E888009B108B /* NetworkError.swift in Sources */,
+				5BE2FDB92846E89C009B108B /* NetworkClient.swift in Sources */,
+				5BE2FDC02846F75D009B108B /* Encodable+Ext.swift in Sources */,
+				5BE2FDBE2846EA03009B108B /* PaymentIntentResponse.swift in Sources */,
 				5BE2FD9D284537A4009B108B /* AppointmentsListVC.swift in Sources */,
 				5BE2FDA228453BC4009B108B /* ViewCode.swift in Sources */,
 			);
@@ -441,6 +481,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +510,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

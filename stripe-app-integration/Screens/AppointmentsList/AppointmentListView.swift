@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol AppointmentsListViewDelegate: AnyObject {
+    func didTappedAppointment(appointment: Appointment)
+}
+
 class AppointmentsListView: UIView {
     private var viewModel: AppointmentsListVM?
     
@@ -21,6 +25,8 @@ class AppointmentsListView: UIView {
         tableView.delegate = self
         return tableView
     }()
+    
+    weak var delegate: AppointmentsListViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -72,6 +78,10 @@ extension AppointmentsListView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let ROW_HEIGHT = CGFloat(128)
         return ROW_HEIGHT
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.didTappedAppointment(appointment: viewModel!.getAppointment(index: indexPath.row))
     }
 }
 

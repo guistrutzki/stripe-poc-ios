@@ -10,9 +10,9 @@ import Foundation
 private let numberFormatter = NumberFormatter()
 
 extension Double {
-    func currencyStringLocalizedWithSymbol(currency: Currency) -> String {
+    func currencyStringLocalizedWithSymbol(locale: AppLocale) -> String {
         numberFormatter.numberStyle = .currency
-        numberFormatter.locale = Locale(identifier: currency.rawValue)
+        numberFormatter.locale = Locale(identifier: locale.rawValue)
         numberFormatter.currencySymbol = numberFormatter.locale.currencySymbol
         numberFormatter.maximumFractionDigits = 2
         
